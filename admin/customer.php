@@ -187,11 +187,11 @@
                 <!-- Customers are not present -->
                 <div class="container mt-4">
                     <div id="noCustomers" class="alert alert-dark " role="alert">
-                        <h1 class="alert-heading">No Customers Found!!</h1>
-                        <p class="fw-light">Be the first person to add one!</p>
+                        <h1 class="alert-heading">Nenhum cliente encontrado!!</h1>
+                        <p class="fw-light">Seja o primerio a adicionar um!</p>
                         <hr>
                         <div id="addCustomerAlert" class="alert alert-success" role="alert">
-                                Click on <button id="add-button" class="button btn-sm"type="button"data-bs-toggle="modal" data-bs-target="#addModal">ADD <i class="fas fa-plus"></i></button> to add a customer!
+                                Clique <button id="add-button" class="button btn-sm"type="button"data-bs-toggle="modal" data-bs-target="#addModal">Adicionar <i class="fas fa-plus"></i></button> para adicionar!
                         </div>
                     </div>
                 </div>
@@ -200,18 +200,18 @@
             <!-- If Customers are present -->
             <section id="customer">
                 <div id="head">
-                    <h4>Customer Status</h4>
+                    <h4>Estado do cliente</h4>
                 </div>
                 <div id="customer-results">
                     <div>
-                        <button id="add-button" class="button btn-sm"type="button"data-bs-toggle="modal" data-bs-target="#addModal">Add Customer Details <i class="fas fa-plus"></i></button>
+                        <button id="add-button" class="button btn-sm"type="button"data-bs-toggle="modal" data-bs-target="#addModal">Adicionar cliente <i class="fas fa-plus"></i></button>
                     </div>
                     <table class="table table-hover table-bordered">
                         <thead>
                             <th>ID</th>
-                            <th>Name</th>
-                            <th>Contact</th>
-                            <th>Actions</th>
+                            <th>Nome</th>
+                            <th>Contacto</th>
+                            <th>Ação</th>
                         </thead>
                         <?php
                             while($row = mysqli_fetch_assoc($resultSqlResult))
@@ -245,9 +245,9 @@
                                                 echo $customer_id;?>" data-name="<?php 
                                                 echo $customer_name;?>" data-phone="<?php 
                                                 echo $customer_phone;?>"
-                                                >Edit</button>
+                                                >Editar</button>
                                             <button class="button delete-button" data-bs-toggle="modal" data-bs-target="#deleteModal" data-id="<?php 
-                                                echo $id;?>">Delete</button>
+                                                echo $id;?>">Apagar</button>
                             </td>
                         </tr>
                     <?php 
@@ -265,24 +265,24 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Add A Customer</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Adicionar cliente</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form id="addCustomerForm" action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="POST">
                             <div class="mb-3">
-                                <label for="cfirstname" class="form-label">Customer Firstname</label>
+                                <label for="cfirstname" class="form-label">Nome</label>
                                 <input type="text" class="form-control" id="cfirstname" name="cfirstname">
                             </div>
                             <div class="mb-3">
-                                <label for="clastname" class="form-label">Customer Lastname</label>
+                                <label for="clastname" class="form-label">Apelido</label>
                                 <input type="text" class="form-control" id="clastname" name="clastname">
                             </div>
                             <div class="mb-3">
-                                <label for="cphone" class="form-label">Contact Number</label>
+                                <label for="cphone" class="form-label">Contacto</label>
                                 <input type="tel" class="form-control" id="cphone" name="cphone">
                             </div>
-                            <button type="submit" class="btn btn-success" name="submit">Submit</button>
+                            <button type="submit" class="btn btn-success" name="submit">Confirmar</button>
                         </form>
                     </div>
                     <div class="modal-footer">
@@ -301,10 +301,10 @@
             </div>
             <div class="modal-body">
                 <h2 class="text-center pb-4">
-                    Are you sure?
+                    Tem a certeza
                 </h2>
                 <p>
-                    Do you really want to delete these customer details? <strong>This process cannot be undone.</strong>
+                    Você realmente quer apagar os dados do cliente? <strong>Este processo não pode ser desfeito.</strong>
                 </p>
                 <!-- Needed to pass id -->
                 <form action="<?php echo $_SERVER['REQUEST_URI']; ?>" id="delete-form"  method="POST">
@@ -313,7 +313,7 @@
             </div>
             <div class="modal-footer d-flex justify-content-center">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="submit" form="delete-form" name="delete" class="btn btn-danger">Delete</button>
+                <button type="submit" form="delete-form" name="delete" class="btn btn-danger">Apagar</button>
             </div>
             </div>
         </div>

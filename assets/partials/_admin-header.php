@@ -72,11 +72,11 @@
                     <i class="fas fa-th"></i> Acentos
                     </a>
                 </li>
-                <li class="option <?php if($page=='signup'){ echo 'active';}?>">
+                <!-- <li class="option <?php if($page=='signup'){ echo 'active';}?>">
                     <a href="./signup.php">
                     <i class="fas fa-user-lock"></i> Adicionar novo gestor        
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
         <div id="main-content">

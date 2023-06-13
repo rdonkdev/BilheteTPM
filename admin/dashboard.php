@@ -140,7 +140,7 @@
                         </div>
                         <a href="./customer.php">Ver mais <i class="fas fa-arrow-right"></i></a>
                     </div>
-                    <div id="Admin" class="info-box user-item">
+                    <!-- <div id="Admin" class="info-box user-item">
                         <div class="heading">
                             <h5>Admins</h5>
                             <div class="info">
@@ -156,7 +156,7 @@
                             </p>
                         </div>
                         <a href="#admin">Ver mais <i class="fas fa-arrow-right"></i></a>
-                    </div>
+                    </div> -->
 
                     <div id="Earning" class="info-box user-item">
                         <div class="heading">
@@ -201,11 +201,11 @@
                     ?>
                 </div> -->
             </section>
-                <footer>
+                <!-- <footer>
                     <p>
                         <i class="far fa-copyright"></i> <?php echo date('Y');?> - Txapita | Feito com &#10084;&#65039; por Nelio Adelino
                         </p>
-                </footer>
+                </footer> -->
         </div>
     </main>
     <script src="../assets/scripts/admin_dashboard.js"></script>

@@ -42,7 +42,7 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <title>Document</title>
+    <title>Bilhete Txapita</title>
     <style>
         li{
             list-style-type: none;
@@ -97,9 +97,9 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <address>
-                        <strong>S B T B S</strong>
+                        <strong>Txapita</strong>
                         <br>
-                        Detroit, Mi 4646
+                        Mahotas, MC 8959
                         
                     </address>
                 </div>
